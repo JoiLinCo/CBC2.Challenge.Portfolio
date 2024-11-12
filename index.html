@@ -3,27 +3,54 @@
     
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Joi Lin's Coding Portfolio</title>
 </head>
 
 <body>
     <header>
         <h1>Joi Lin's Coding Portfolio</h1>
+        <nav id="navSection">
+            <ul>
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="#codingSection">Coding</a></li>
+                <li><a href="#otherSection">Other</a></li>
+                <li><a href="#contactSection">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <h2>Coding</h2>
-        <p>Git Hub Repository</p>
-        <h3>Other</h3>
-        <a href="https://linkedin.com/in/joilin">Linked In</a>
+        <section id="aboutSection"> 
+            <h2>About Joi</h2>
+            <img href="./assets/images/JoiLin-BW.jpg" alt="Black and white photo of Joi" />
+
+        </section>
+
+        <section id="codingSection">
+            <h2>Coding</h2>
+            <a href="https://github.com/JoiLinCo?tab=repositories" target="_blank">Git Hub Repository</a>
+        </section>
+
+        <section id="otherSection">
+            <h2>Other</h2>
+        </section>
+
+        <section id="contactSection">
+            <h2>Contact Joi</h2>
+            <div class="contact">
+                <a href="mailto:joilin@outlook.com" class="contactFlexItem">Email Joi</a>
+                <a href="https://linkedin.com/in/joilin" target="_blank" class="contactFlexItem">Linked In</a>
+                <a href="https://facebook.com/joilin" target="_blank" class="contactFlexItem">Facebook</a>
+            </div>
+        </section>
 
     </main>
 
-    <footer>
+    <footer id="footerSection">
         <h3>Made with Love by JL &copy 2024</h3>
     </footer>
-    <script type="text/javascript" src="./script.js"></script>
+    <script type="text/javascript" src="./assets/script.js"></script>
 </body>
 
 </html>
