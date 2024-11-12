@@ -1,4 +1,9 @@
 
+.aboutImg {
+    display: flex;
+    height: 300px;
+}
+
 .contact {
     display: flex;
     flex-direction: column;
