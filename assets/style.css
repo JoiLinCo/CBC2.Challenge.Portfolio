@@ -19,7 +19,36 @@ h1 {
 
 .projects {
     display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 5%;
 }
+
+.project1 {
+    background-image: url(./images/1responsiverunbuddy.png);
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.project2 {
+    background-image: url(./images/2guessinggame.png);
+}
+
+.project3 {
+    background-image: url(./images/3horiseon.png);
+}
+
+.project-img {
+    width: 100%;
+    min-height: 300px;
+    background-size: cover;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+}
+
 
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
