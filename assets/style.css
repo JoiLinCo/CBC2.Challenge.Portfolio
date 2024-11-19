@@ -1,27 +1,39 @@
+* {
+    background-color: lightblue;
 
-.about {
-    display: flex;
 }
 
 .aboutImg {
-    width: 150px;
-    height: 150px;
+    width: 400px;
+    display: block;
 }
 
+.aboutText {
+    display: block;
+}
 .contact {
     display: flex;
     flex-direction: column;
 }
 
 h1 {
-    color: blueviolet;
+    color: navy;
+    text-align: center;
+}
+
+mark {
+    background-color: navy;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
 }
 
 .projects {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
-    gap: 5%;
+    padding: 10px;
+    margin: 10px 10px;
 }
 
 .project1 {
@@ -39,14 +51,18 @@ h1 {
 }
 
 .project-img {
-    width: 100%;
-    min-height: 300px;
+    width: 90%;
+    min-height: 200px;
     background-size: cover;
     display: flex;
     padding: 15px;
+    margin: 15px;
     align-items: flex-end;
     position: relative;
     overflow: hidden;
+    color: white;
+    text-align: center;
+    font-style: strong;
 }
 
 
@@ -58,6 +74,30 @@ h1 {
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+
+    .aboutImg {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .aboutText {
+        width: 75%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    .project1 {
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
 
 }
 
